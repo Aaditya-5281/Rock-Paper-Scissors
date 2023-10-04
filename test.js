@@ -16,9 +16,6 @@ document.querySelector('.lossescounter').innerHTML = String(score.losses)
 document.querySelector('.winscounter').innerHTML = String(score.wins)
 document.querySelector('.tiescounter').innerHTML = String(score.ties)
 
-
-
-
 function getCompMove(){
 
     let num = Math.floor(Math.random() * 10)%3;
@@ -75,7 +72,6 @@ function resetScore(){
     document.querySelector('.winscounter').innerHTML = String(score.wins)
     document.querySelector('.tiescounter').innerHTML = String(score.ties)
 }
-    
 
 
 function playGame(playermove){
@@ -102,8 +98,6 @@ function playGame(playermove){
     }
 
     localStorage.setItem('score',JSON.stringify(score))
-
-    console.log(score)
     return;
 }
 
